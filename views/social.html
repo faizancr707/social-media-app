@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css">
+     <link rel="stylesheet" href="/css/main.css"> 
+</head>
+
+<body class="text-bg-success bg-opacity-25">
+    <!-- Navigation bar -->
+    <nav class="nav navbar navbar-expand-lg text-bg-success col-12">
+        <div class="container text-black p-3 " >
+           
+            
+            <h2>Social Media App</h2>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+          
+        </div>
+    </nav>
+
+    <!-- Picture Post Form -->
+    <div class="container-fluid row d-flex justify-content-around mt-3">
+        <div class=" col-md-5 mt-3 collapse show" id="picture-form">
+            <div class="card bg-dark text-white">
+               
+                <div class="card-body ps-4 ">
+                    <form id="pictureForm">
+                        <div class="mb-3">
+                            <label for="imageUrl" class="form-label">Image URL:</label>
+                            <input type="text" class="form-control" id="imageUrl" name="imageUrl"
+                                placeholder="Enter the Image URL" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="description" class="form-label">Description:</label>
+                            <textarea class="form-control" id="description" rows="8" name="description"
+                                placeholder="Write a description"></textarea>
+                        </div>
+                        <div class="mb-3 text-center">
+                            <button type="submit" class="btn btn-primary form-control" id="submitPictureBtn">Post
+                                Picture</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Display Pictures and Comments -->
+        <!-- Picture Placeholder -->
+<div class="container-fluid col-md-7 mt-3" id="picturePlaceholder">
+    <!-- This section will display pictures and their comments dynamically -->
+    <div class="img-container">
+        <img src="" alt="Image Placeholder">
+    </div>
+</div>
+
+
+    
+
+    <!-- Script dependencies -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+    <script src="js/social.js"></script>  
+</body>
+
+</html>

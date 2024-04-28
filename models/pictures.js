@@ -1,7 +1,10 @@
+// models/pictures.js
+
 const Sequelize = require('sequelize');
 const sequelize = require('../util/database');
 
 const Pictures = sequelize.define('Pictures', {
+   
     id: {
         type: Sequelize.INTEGER,
         autoIncrement: true,
@@ -9,7 +12,7 @@ const Pictures = sequelize.define('Pictures', {
         allowNull: false
     },
     imageUrl: {
-        type: Sequelize.STRING(),
+        type: Sequelize.TEXT(), 
         allowNull: false
     },
     description: {

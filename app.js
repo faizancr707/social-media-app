@@ -6,6 +6,7 @@ const sequelize = require('./util/database');
 const socialRouter = require('./routes/social');
 const Pictures = require('./models/pictures');
 const Comments = require('./models/comments');
+
 const app = express();
 
 app.use(cors());
@@ -16,7 +17,7 @@ app.use(express.static('public'));
 
 Pictures.hasMany(Comments);
 Comments.belongsTo(Pictures); 
-
+ 
 app.use('/social', socialRouter);
 
 

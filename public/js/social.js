@@ -1,4 +1,4 @@
-// social.js
+
 
 // Function to fetch pictures and their comments
 async function fetchPicturesAndComments() {
@@ -121,6 +121,7 @@ document.getElementById('pictureForm').addEventListener('submit', submitPictureF
 
 // Fetch pictures and comments when the page loads
 fetchPicturesAndComments();
+
 
 // Function to render a picture and its comments
 function renderPicture(picture, comments) {
